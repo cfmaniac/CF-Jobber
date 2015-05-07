@@ -1,0 +1,141 @@
+Drop this into your index file and run once - it will generate the 
+sql you need for the submit.cfm file based on the
+table fields.  So, create the table first, then run this script.
+
+Alter as needed for file uploads, etc.
+
+
+
+<cfset temptable = 'changeme'>
+
+<cfquery name="showColumns" dataSource="#dsn#">
+  show columns from #temptable# where field != 'id' and type != 'timestamp'
+</cfquery>
+
+<cfdump var="#showColumns#">
+
+<cfset fieldList = ValueList(showColumns.field)>
+<cfset typeList = ValueList(showColumns.type)>
+
+
+<cfsavecontent variable="insert">
+  <cfoutput>
+  
+  insert into #temptable#(#fieldList#)<br />
+  values(
+    <cfloop list="#fieldList#" index="i">
+      "##form.#i###",
+    </cfloop>
+  )
+  
+  </cfoutput>
+</cfsavecontent>
+
+<cfoutput>#insert#</cfoutput>
+
+<cfsavecontent variable="update">
+  <cfoutput>
+  
+  update #temptable# set<br />
+  
+  <cfloop list="#fieldList#" index="i">
+    #i# = "##form.#i###",<br />
+  </cfloop>
+  
+  where id = ##form.id##
+  
+  </cfoutput>
+</cfsavecontent>
+
+
+<br /><br /><cfoutput>#update#</cfoutput>
+
+
+<cfsavecontent variable="delete">
+  <cfoutput>
+  
+  delete from #temptable# where id = where id = ##form.id##  
+  
+  </cfoutput>
+</cfsavecontent>
+
+<br /><br /><cfoutput>#delete#</cfoutput>
+
+
+<h2>Create the form</h2>
+
+<form action="submit.cfm" method="post" class="form-horizontal" enctype="multipart/form-data">
+  
+  <cfset counter = 1>
+  <cfloop list="#fieldList#" index="i">
+        
+    <cfoutput>
+     
+      <cfset fieldType = ListGetAt(#typeList#,counter)>
+      
+      <cfif fieldType eq 'text'>
+        
+        <div class="control-group">
+          <label class="control-label" for="textarea">#CapFirst(i)#</label>
+          <div class="controls">                     
+            <textarea id="textarea" name="#i#"></textarea>
+          </div>
+        </div>
+
+      <cfelse>
+        
+        <div class="control-group">
+          <label class="control-label" for="textinput">#CapFirst(i)#</label>
+          <div class="controls">
+            <input id="textinput" name="#i#" type="text" class="input-xlarge">
+          </div>
+        </div>
+      
+      </cfif>      
+      
+    </cfoutput>
+    
+    <cfset counter = counter + 1>
+    
+  </cfloop>
+  
+  <div class="control-group">    
+    <div class="controls">
+      <button id="singlebutton" name="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+
+</form>
+
+
+
+<!---
+ Capitalizes the first letter in each word.
+ Made udf use strlen, rkc 3/12/02
+ v2 by Sean Corfield.
+ 
+ @param string 	 String to be modified. (Required)
+ @return Returns a string. 
+ @author Raymond Camden (&#114;&#97;&#121;&#64;&#99;&#97;&#109;&#100;&#101;&#110;&#102;&#97;&#109;&#105;&#108;&#121;&#46;&#99;&#111;&#109;) 
+ @version 2, March 9, 2007 
+--->
+<cffunction name="CapFirst" returntype="string" output="false">
+	<cfargument name="str" type="string" required="true" />
+	
+	<cfset var newstr = "" />
+	<cfset var word = "" />
+	<cfset var separator = "" />
+	
+	<cfloop index="word" list="#arguments.str#" delimiters=" ">
+		<cfset newstr = newstr & separator & UCase(left(word,1)) />
+		<cfif len(word) gt 1>
+			<cfset newstr = newstr & right(word,len(word)-1) />
+		</cfif>
+		<cfset separator = " " />
+	</cfloop>
+
+	<cfreturn newstr />
+</cffunction>
+
+
+<cfabort>

@@ -1,0 +1,213 @@
+/*====================================== reset.css is here ========================================*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0;}
+table {	border-collapse:collapse; border-spacing:0;}
+fieldset,img { border:0; }
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal; font-weight:normal;}
+ol,ul { list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {	font-size:100%;	font-weight:bold;}
+q:before,q:after {content:'';}
+abbr,acronym { border:0;}
+.clear{clear:both; font-size:1px;line-height:1px; display:block; height:0;}
+.clrflt{clear:both;}
+.last	{margin:0 !important;}
+.pad_last{padding:0 !important;}
+.no_bg {background:none !important;}
+/**************************************************************************************/
+a											{color:#000; text-decoration:none; outline:0 none;}
+a:hover										{color:#000;  text-decoration:none;}
+h1											{font-size:24px;}
+h2											{font-size:22px;}
+h3											{font-size:18px;}
+h4											{font-size:16px;}
+h5											{font-size:14px;}
+h6											{font-size:12px;}
+/*----------------------------------------------------------------------------------*/
+html 										{}
+body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12px;}
+.flt_lt										{float:left; display:inline;}
+.flt_rt										{float:right; display:inline;}
+/* ---------------------------------------------------------------------------------*/
+
+
+/* ----------------------- layout ----------*/
+.wrapper									{margin:0 auto;}
+.container									{width:1174px; margin:0 auto; position:relative;}
+.main_content								{}
+.header										{width:100%;background:#fff;position:relative;z-index:99999;}
+.header-right								{width:1174px;display:inline-block;}
+.header-right ul							{display:inline-block;float:right;padding:23px 0 15px 0;}
+.header-right ul li							{display:inline-block;float:left;padding:0 0 0 7px;}
+.header-right ul li a						{display:inline-block;}
+/*-------------------------------------------*/
+
+/* ------------------ HEADER HERE -------------------*/
+#logo										{position:absolute;left:-33px;top:0;z-index:999;}
+#logo a										{display:inline-block;}
+/* ---------------------------------------------------------*/
+
+
+.menu										{display:none;}
+.menu a										{display:inline-block;}
+/* ------------------------- NAVIGATION HERE ---------------*/
+#nav										{width:960px;display:inline-block;float:right;}
+#nav ul										{display:inline-block;float:left;}
+#nav ul li									{display:inline-block;float:left;padding:0 2px 0 0;}
+#nav ul li a								{width:153px;border:solid 1px #f9bfc5;text-align:center;padding:8px 0 3px 11px;font-family: 'Josefin Sans', sans-serif;font-size:20.04px;
+color:#fff;display:inline-block;font-weight:700;background:url(../images/layout/link1-bg.png) repeat-x;}
+#nav ul li a.service1						{width:184px;border:solid 1px #fdd8be;text-align:center;padding:8px 0 3px 0px;font-family: 'Josefin Sans', sans-serif;font-size:20.04px;
+color:#fff;display:inline-block;font-weight:700;background:url(../images/layout/link2-bg.png) repeat-x;}
+#nav ul li a.service2						{width:253px;border:solid 1px #dcf2c9;text-align:center;padding:8px 0 3px 0px;font-family: 'Josefin Sans', sans-serif;font-size:20.04px;
+color:#fff;display:inline-block;font-weight:700;background:url(../images/layout/link3-bg.png) repeat-x;}
+#nav ul li a.service3						{width:236px;border:solid 1px #e2d4ee;text-align:center;padding:8px 0 3px 0px;font-family: 'Josefin Sans', sans-serif;font-size:20.04px;
+color:#fff;display:inline-block;font-weight:700;background:url(../images/layout/link4-bg.png) repeat-x;}
+#nav ul li a.service4						{width:126px;border:solid 1px #c1deef;text-align:center;padding:8px 0 3px 0px;font-family: 'Josefin Sans', sans-serif;font-size:20.04px;
+color:#fff;display:inline-block;font-weight:700;background:url(../images/layout/link5-bg.png) repeat-x;}
+
+/* ---------------------------------------------------------*/
+
+/* ------------------------ MIAN CONTENT HERE --------------*/
+.main-in									{width:100%;background:#fff;margin:0 0 -39px 0px;}
+.main										{width:1174px;margin:30px auto 0;padding:0px 0 0 0;background:url(../images/layout/main-bg.png) repeat;}
+.main .color-trasperent						{width:1177px;margin:0 auto;background:url(../images/layout/banner-bg.png) no-repeat center top;position:absolute;left:0;top:28px;z-index:99;
+height:36px;}		
+.main-left									{width:273px;display:inline-block;float:left;background:#e1f0f7;}
+.main-left-top								{width:273px;background:url(../images/layout/water-bg.png) no-repeat;}
+.main-left-top h2							{font-family: 'Josefin Sans', sans-serif;font-size:44.3px;color:#1c5782;display:inline-block;font-weight:400;
+padding:71px 0 0 12px;line-height:45px;}
+.main-left-top h3							{width:269px; font-family: 'Josefin Sans', sans-serif;font-size:35.2px;color:#fff;display:inline-block;font-weight:400;
+background:url(../images/layout/online-bg.png) no-repeat;padding:3px 0 3px 10px;margin:0 0 5px 3px;}
+.main-left-top a.online						{width:250px; font-family: 'Josefin Sans', sans-serif;font-size:16.9px;color:#666666;display:inline-block;font-weight:700;
+background:url(../images/layout/button1.png) no-repeat;text-align:center;padding:17px 0;margin:19px 0 0 15px;}
+.main-left-top h4							{font-family: 'Josefin Sans', sans-serif;font-size:40.7px;color:#265e80;display:inline-block;font-weight:400;padding:180px 0 0 17px;}
+.main-left-top ul							{display:inline-block;float:left;padding:15px 0 0 21px;}
+.main-left-top ul li						{display:block;float:none;padding:0 0 3px 0;}
+.main-left-top ul li a						{display:inline-block;font-family: 'Josefin Sans', sans-serif;font-size:24.3px;color:#679db2;display:inline-block;font-weight:700;}
+
+.main-left-bttom							{width:273px;background:#e1f0f7;}
+.main-left-bttom ul							{display:inline-block;float:left;padding:57px 0 123px 24px;}
+.main-left-bttom ul li						{display:inline-block;float:left;padding:0 0 44px 0;}
+.main-left-bttom ul li a					{display:inline-block;margin:0;}
+.main-left-bttom ul li.dig					{display:inline-block;float:left;padding:0 0 0 35px;}
+
+.main-right									{width:901px;display:inline-block;float:right;background:#fff;}
+.banner										{width:901px;background:url(../images/layout/banner-img.png) no-repeat center -7px;padding:0 0 50px 0;}
+.banner h2									{font-family: 'Josefin Sans', sans-serif;font-size:71.3px;color:#249bca;font-weight:400;text-transform:uppercase;
+padding:72px 0 0 57px;}
+.banner h3									{font-family: 'Josefin Sans', sans-serif;font-size:164.1px;color:#249bca;font-weight:400;
+padding:0 0 0 40px;line-height:125px;letter-spacing:-3px;}
+.banner h4									{font-family: 'Josefin Sans', sans-serif;font-size:26.27px;color:#249bca;font-weight:600;padding:15px 0 24px 73px;
+word-spacing:-2px;}
+.banner a									{width:377px;text-align:center; font-family: 'Josefin Sans', sans-serif;font-size:27.16px;color:#fff;
+font-weight:400;padding:15px 0;display:inline-block;background:#71bf2e;margin:0 0 0 75px;}
+
+.program-main								{width:901px;background:url(../images/layout/program-main-bg.png) no-repeat center 219px;padding:0 0 0px 0;}
+.program-link								{width:901px;}
+.program-link ul							{display:inline-block;float:left;padding:30px 0 0 0;}
+.program-link ul li							{width:195px; display:inline-block;float:left;margin:0 0 0 30px;}
+.program-link ul li span					{display:block;text-align:center;padding:0 0 18px 0;}
+.program-link ul li a						{font-family: 'Josefin Sans', sans-serif;font-size:17.9px;color:#211d1e;font-weight:600;display:block;
+text-align:center;line-height:23px;margin:0 auto;}
+.program-link ul li p						{font-family: 'Josefin Sans', sans-serif;font-size:10.44px;color:#919191;font-weight:400;line-height:17.9px;
+text-align:center;padding:5px 0 0 0;}
+.program-link ul li.last-program			{width:209px;margin:0 0 0 17px;}
+
+.down-pipe									{width:776px;background:url(../images/layout/scroll.png) no-repeat 41px 51px;padding:28px 0 1px 138px;}
+.down-pipe small							{font-family: 'Josefin Sans', sans-serif;font-size:45.68px;color:#656565;font-weight:400;padding:0 0 0 4px;}
+.down-pipe h2								{font-family: 'Josefin Sans', sans-serif;font-size:71px;color:#656565;font-weight:400;line-height:32px;}
+.down-pipe ul								{display:inline-block;float:left;padding:20px 0 0 0;}
+.down-pipe ul li 							{display:block;background:url(../images/layout/li-circle-bg.png) no-repeat left 15px;padding:13px 0 32px 69px;}
+.down-pipe ul li a							{font-family: 'Josefin Sans', sans-serif;font-size:25px;color:#818181;font-weight:400;display:inline-block;}
+.down-pipe ul li a span						{font-family: 'Josefin Sans', sans-serif;font-size:20.17px;color:#818181;font-weight:400;display:block;line-height:7px;}
+
+
+/* ---------------------------------------------------------*/
+
+
+/* ------------------ FOOTER HERE --------------------------*/
+.footer-in-main								{width:100%;}
+.footer-in									{width:100%;background:url(../images/layout/footer-bg.png) no-repeat center 0px ;position:relative;z-index:99999;
+margin:0px 0 0;min-height:39px;background-size:cover;}
+.footer-main								{width:100%;background:#249bca;margin:0;}
+.footer										{width:1174px;margin:0 auto;}								
+.footer-left								{width:670px;display:inline-block;float:left;padding:40px 0 32px 0;}
+.footer-left h2								{width:385px; font-family: 'Josefin Sans', sans-serif;font-size:39.3px;color:#fff;font-weight:700;
+background:url(../images/layout/text-bg.png) no-repeat right top;padding:22px 0 28px 10px;}
+.footer-left ul								{width:300px; display:inline-block;float:left;padding:0 0 0 8px;margin:0 28px 0 0;}
+.footer-left ul li							{display:block;float:none;padding:0 0 21px 0;} 
+.footer-left ul li h3						{font-family: 'Josefin Sans', sans-serif;font-size:20.84px;color:#fff;font-weight:700;padding:2px 0 0 0;}
+.footer-left ul li span						{font-family: 'Josefin Sans', sans-serif;font-size:20.84px;color:#fff;font-weight:700;display:inline-block;padding:0 5px 0 0;}
+.footer-left ul li small					{font-family: 'Josefin Sans', sans-serif;font-size:20.84px;color:#fff;font-weight:700;}
+.footer-left ul li p						{font-family: 'Josefin Sans', sans-serif;font-size:20.84px;color:#fff;font-weight:700;padding:5px 0 0 0;line-height:26px;}
+.footer-left ul li a						{font-family: 'Josefin Sans', sans-serif;font-size:20.84px;color:#fff;font-weight:700;text-decoration:underline;}
+.footer-left ul li a:hover					{text-decoration:none; }
+.footer-left ul li.text						{width:286px; display:block;float:none;} 
+.footer-right								{width:500px;display:inline-block;float:right;padding:40px 0 32px 0;}
+.footer-right h2							{width:493px; font-family: 'Josefin Sans', sans-serif;font-size:39.3px;color:#fff;font-weight:700;
+background:url(../images/layout/text-bg.png) no-repeat right top;padding:22px 0 25px 0;}
+.footer-right ul							{ display:inline-block;float:left;padding:0 0 0 5px;margin:0 0px 0 0;}
+.footer-right ul li							{width:456px; display:inline-block;float:left;padding:9px 0 11px 0;background:#43bbea;} 
+.footer-right ul li span					{font-family: 'Josefin Sans', sans-serif;font-size:17.84px;color:#fff;font-weight:700;display:inline-block;padding:0 5px 0 17px;
+text-align:left;float:left;}
+.footer-right ul li small					{font-family: 'Josefin Sans', sans-serif;font-size:14.84px;color:#fff;font-weight:700;display:inline-block;text-align:right;float:right;
+padding:3px 21px 0 0;}
+.footer-right ul li.blue-bg					{width:456px; display:inline-block;float:left;padding:12px 0 14px 0;background:#249bca;} 
+
+.copy-in									{width:100%;background:#fff;}
+.copy										{width:1178px;margin:0 auto;padding:24px 0 37px;}
+.copy span										{font-family: 'Josefin Sans', sans-serif;font-size:15.19px;color:#9c9c9c;font-weight:700;display:inline-block;float:left;
+text-transform:uppercase;padding:0 0 0 8px;}
+.copy p										{font-family: 'Josefin Sans', sans-serif;font-size:15.19px;color:#9c9c9c;font-weight:700;display:inline-block;float:right;
+text-transform:uppercase;}
+.copy p a									{font-family: 'Josefin Sans', sans-serif;font-size:15.19px;color:#9c9c9c;font-weight:700;display:inline-block;}
+.copy p a:hover								{text-decoration:underline;}
+/* ---------------------------------------------------------*/
+
+/* ------------------ innerpage HERE --------------------------*/
+.interior									{width:902px;padding:50px 0 0 0px;background:url(../images/layout/program-main-bg.png) no-repeat center 1036px;min-height:1329px;}
+.interior-left								{width:655px;display:inline-block;float:left;padding:0 0 0 59px;}
+.interior-left h2							{font-family: 'Josefin Sans', sans-serif;font-size:36.4px;color:#249bca;font-weight:400;padding:23px 0 5px 0;
+text-transform:uppercase;}
+.interior-left p							{font-family: 'Josefin Sans', sans-serif;font-size:18px;color:#7c7c7c;font-weight:400;line-height:24px;padding:26px 0 0 5px;}
+.interior-left span							{display:block;padding:19px 0 2px 4px;}
+.interior-right								{width:208px;display:inline-block;float:right;}
+.interior-right ul							{display:inline-block;float:left;padding:32px 0 0 0;}
+.interior-right ul li							{width:232px; display:inline-block;float:left;margin:0 0 0 0px;padding:0 0 18px 0;}
+.interior-right ul li span					{display:block;text-align:center;padding:0 0 18px 0;}
+.interior-right ul li a						{font-family: 'Josefin Sans', sans-serif;font-size:17.9px;color:#211d1e;font-weight:600;display:block;
+text-align:center;line-height:23px;margin:0 auto;}
+.interior-right ul li p						{font-family: 'Josefin Sans', sans-serif;font-size:10.44px;color:#919191;font-weight:400;line-height:17.9px;
+text-align:center;padding:5px 0 0 0;}
+.interior-right ul li.last-program			{width:207px; margin:0 0 0 19px;padding:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

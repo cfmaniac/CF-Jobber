@@ -1,0 +1,3 @@
+ul#navigation > li > a > span,
+ul#navigation > li > a:hover > span {background-position: center 48%;}
+ul#lang-menu li, ul#lang-menu li a, ul#user-menu li a {font-family: 'Myriad Pro'; line-height: 34px;}

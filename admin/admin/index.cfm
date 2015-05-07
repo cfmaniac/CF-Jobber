@@ -1,0 +1,1 @@
+<cflocation addToken="no" url="login.cfm">

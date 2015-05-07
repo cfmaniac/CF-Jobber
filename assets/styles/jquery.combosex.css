@@ -1,0 +1,592 @@
+.combosex_main {
+  display:inline-block;
+  zoom: 1;
+  *display: inline;
+  border: 1px solid #C2C2C2;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font: 13px/13px sans-serif;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  overflow:hidden;
+  outline:none;
+  position: relative;
+}
+
+
+.combosex_main a, .combosex_options a {
+  text-decoration:none; 
+}
+.combosex_noinput {
+  cursor:default; 
+}
+
+.combosex_arrow {
+  cursor:default;
+  float:right;
+  position:absolute;
+  right:0px;
+  width:16px;
+  top:0px;
+  height:100%;
+  border-radius:2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-left:solid 1px #ddd;
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 68%, #f2f2f2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(68%,#e5e5e5), color-stop(100%,#f2f2f2));
+  background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 68%,#f2f2f2 100%);
+  background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 68%,#f2f2f2 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 68%,#f2f2f2 100%);
+/*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 );*/
+  background: linear-gradient(top, #ffffff 0%,#e5e5e5 68%,#f2f2f2 100%);
+  -webkit-box-shadow: inset 0px 0px 3px #fff;
+  -moz-box-shadow: inset 0px 0px 3px #fff;
+  box-shadow: inset 0px 0px 3px #fff;
+  cursor:default;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+
+.combosex_main:hover .combosex_arrow {
+  background: #2aadde;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+.combosex_search {
+  background:#eee;
+  padding:3px 3px 3px 3px;
+  background: #f7f7f7;
+  background: -moz-linear-gradient(top, #f7f7f7 0%, #e5e5e5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#e5e5e5));
+  background: -webkit-linear-gradient(top, #f7f7f7 0%,#e5e5e5 100%);
+  background: -o-linear-gradient(top, #f7f7f7 0%,#e5e5e5 100%);
+  background: -ms-linear-gradient(top, #f7f7f7 0%,#e5e5e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e5e5e5',GradientType=0 );
+  background: linear-gradient(top, #f7f7f7 0%,#e5e5e5 100%);
+  margin-bottom: 0px;
+  border-bottom:solid 1px #bbb;
+}
+
+
+.combosex_search input {
+  display:block;
+  width:100%;
+  font-size:13px;
+  margin:0px;
+  border:none;
+  background:none;
+  background: transparent !important;
+  outline:none;
+  overflow:hidden;
+  position:relative;
+}
+
+.combosex_search_nofound em {
+  font: 12px/16px sans-serif;
+  font-style: italic;
+  padding:3px 5px 3px 5px;
+  background:#eee;
+  color:#999;
+  overflow:hidden;
+  display: block;
+}
+
+.combosex_options {
+  font: 13px/13px sans-serif;
+  max-height: 300px;
+  overflow:auto;
+    background:#fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    margin: 0 -4px 0 0;
+}
+
+.combosex_clear {
+  clear:both; 
+  display:block;
+}
+.combosex_poplist {
+  position:absolute;
+  z-index: 100;
+  padding: 10px 0 0 0;
+}
+
+.combosex_poplist.textfield-options {
+    background: url(../images/select-arrow.png) left top no-repeat;
+}
+
+.combosex_poplist.select-options {
+    background: url(../images/select-arrow.png) right top no-repeat;
+}
+
+.combosex_poplist ul {
+    padding: 3px 0 !important;
+}
+
+.combosex_options_dropup {
+  -webkit-box-shadow: 0 -1px 10px rgba(0,0,0,.3);
+  -moz-box-shadow   : 0 -1px 10px rgba(0,0,0,.3);
+  -o-box-shadow     : 0 -1px 10px rgba(0,0,0,.3);
+  box-shadow        : 0 -1px 10px rgba(0,0,0,.3);
+  margin-top: -1px;
+}
+
+.combosex_list_multi {
+  font: 13px/13px sans-serif;
+  outline:none;
+}
+
+.combosex_select .combosex_input_span {
+  cursor:default; 
+}
+
+.combosex_poplist li, .combosex_poplist ul, .combosex_list_multi li, .combosex_list_multi ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+    cursor: pointer;
+}
+
+.combosex_options span, .combosex_list_multi span {
+  display:block;
+  white-space: nowrap;
+}
+
+.combosex_options a, .combosex_optgroup_label span, .combosex_list_multi .combosex_options a {
+  display:block; 
+  padding:4px 10px;
+  user-select:none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+
+
+.combosex_optgroup a {
+  padding-left:22px;
+}
+
+.combosex_options a {
+  color:#333;
+  padding: 5px 6px;
+    font-size: 15px;
+    height: 15px;
+  font-family:Lato;
+}
+
+.combosex_options a span {
+  display:block;
+}
+.combosex_options a small {
+  font: 11px/11px;
+  display:block;
+  color:#777;
+  margin-top:5px;
+}
+.combosex_list_multi .combosex_options a, {
+  color:#000;
+} 
+.combosex_list_multi .combosex_options .combosex_options_active {
+  background:#999;
+  color:#fff;
+}
+
+
+.combosex_list_multi .combosex_options_active, .combosex_list_multi .combosex_options .combosex_options_active:hover {
+  background:#999;
+  color:#fff;
+}
+
+.combosex_list_multi .combosex_options a:hover {
+   color:#000;
+}
+
+
+.combosex_list_multi .combosex_options_active small {
+  color:#eee; 
+}
+
+.combosex_poplist .combosex_options_hover small, .combosex_active .combosex_list_multi .combosex_options_active small {
+  color:#ddd;
+}
+
+
+.combosex_optgroup_label {
+  color:#999; 
+  font-weight:bold;
+}
+
+.combosex_options {
+  overflow: auto;
+  overflow-x: hidden !important;
+}
+
+.combosex_options .combosex_options_disabled, .combosex_options .combosex_options_disabled:hover {
+  color:#999; 
+  background:#fff;
+}
+.combosex_options .combosex_options_disabled:hover, .combosex_options_disabled.combosex_options_hover {
+  background:#eee; 
+}
+
+
+
+.combosex_arrow_down em {
+  background:url("../images/arrow.png") no-repeat 0 0;
+  border:none;
+  width:11px;
+  height:6px;
+  position: absolute;
+  top: 40%;
+  right:2px;
+}
+
+.combosex_search div, .combosex_input_span {
+  display:block;
+  padding:2px 3px;
+  overflow:hidden;
+  position:relative;
+  cursor:text;
+}
+
+.combosex_input, .combosex_search div,.combosex_text, .combosex_select  {
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
+  background-image: -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background-image: -moz-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background-image: -o-linear-gradient(bottom, white 85%, #eeeeee 99%);
+  background-image: -ms-linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+/*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 );*/
+  background-image: linear-gradient(top, #ffffff 85%,#eeeeee 99%); 
+  font-family: sans-serif;
+}
+
+.combosex_search div {
+  padding:3px;
+  border:solid 1px #ccc;
+  cursor:text;
+  overflow:hidden;
+}
+
+.combosex_display {
+  overflow:hidden; 
+}
+.combosex_input_span input, .combosex_display {
+  border: none;
+  background: none; 
+  font: inherit;
+  filter: none;
+  outline: none;
+  background: transparent !important;
+  border: 0 !important;
+  outline: 0;
+  height: 14px;
+  padding:0px;
+  margin:0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+.combosex_display {
+  display: block;
+  padding: 2px 3px;
+  color: #000;
+  text-decoration:none;
+  cursor:default;
+  white-space: nowrap;
+}
+.combosex_display:hover {
+  color: #000; 
+}
+
+.combosex_select .combosex_input_span {
+   padding-right:20px;
+}
+
+
+
+.combosex_input_span input, .combosex_ph {
+  padding: 2px 0px 2px 0px;
+  width:100%;
+}
+.combosex_search .combosex_ph {
+  position:absolute;
+  left:4px;
+  top: 2px; 
+  font-family: sans-serif ;
+  font-size:13px;
+  line-height:15px;
+  cursor:text;
+}
+.combosex_ph {
+  color:#999;
+  font-style:italic; 
+  cursor: text;
+}
+.combosex_input_span .combosex_ph {
+  position:absolute;
+  left: 4px;
+  top: 2px;
+  
+}
+
+.combosex_select {
+
+}
+
+
+
+.combosex_text {
+  cursor: text;
+}
+
+.combosex_tags_wrap {
+  display:block;
+  -o-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  
+  
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
+  background-image: -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background-image: -moz-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background-image: -o-linear-gradient(bottom, white 85%, #eeeeee 99%);
+  background-image: -ms-linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 );
+  background-image: linear-gradient(top, #ffffff 85%,#eeeeee 99%); 
+  
+}
+
+.combosex_tags ul, .combosex_tags li {
+  list-style:none;
+  list-style-type: none;
+  padding:0px;
+  margin:0px;
+  font: 13px/14px sans-serif;
+}
+
+.combosex_tags ul {
+  float:left;
+  padding: 2px 0px 0px 2px;
+
+}
+
+.combosex_tags li {
+  display:inline-block;
+  zoom: 1;
+  *display: inline;
+  background:#eee;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  cursor: default;
+  margin:0px 2px 2px 0px;
+  float:left;
+  position:relative;
+  
+  
+  background-color: #E4E4E4;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e4e4e4), color-stop(0.7, #eeeeee));
+  background-image: -webkit-linear-gradient(center bottom, #e4e4e4 0%, #eeeeee 70%);
+  background-image: -moz-linear-gradient(center bottom, #e4e4e4 0%, #eeeeee 70%);
+  background-image: -o-linear-gradient(bottom, #e4e4e4 0%, #eeeeee 70%);
+  background-image: -ms-linear-gradient(top, #e4e4e4 0%,#eeeeee 70%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e4', endColorstr='#eeeeee',GradientType=0 );
+  background-image: linear-gradient(top, #e4e4e4 0%,#eeeeee 70%);
+  color: #333;
+  border: 1px solid #B4B4B4;
+  
+  
+}
+
+
+.combosex_tags .combosex_tag_active {
+  border:solid 1px #2aadde;
+  background-color: #E4E4E4;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #dddddd), color-stop(0.7, #cccccc));
+  background-image: -webkit-linear-gradient(center bottom, #dddddd 0%, #cccccc 70%);
+  background-image: -moz-linear-gradient(center bottom, #dddddd 0%, #cccccc 70%);
+  background-image: -o-linear-gradient(bottom, #dddddd 0%,  #cccccc 70%);
+  background-image: -ms-linear-gradient(top, #dddddd 0%,#cccccc 70%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+  background-image: linear-gradient(top, #dddddd 0%, #cccccc 70%);
+} 
+
+
+
+
+
+.combosex_active .combosex_append, .combosex_poplist .combosex_append {
+  display:inline-block;
+}
+.combosex_append {
+  display:none;
+  font: 13px/13px sans-serif;
+  height: 12px;
+  line-height:12px;
+  width: 12px;
+  bottom:5px;
+  right:3px;
+  margin-left:-19px;
+  text-align:center;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  color:#fff;
+  position:absolute;
+  font-weight:bold !important;
+  font-size:14px;
+  background: #ddd;
+  display:none;
+  cursor:default;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+.combosex_append_on {
+  background:#2aadde;
+  cursor:pointer;
+}
+.combosex_append_on:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+  color:#fff;
+}
+
+.combosex_tags span {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  padding:2px 14px 2px 3px; 
+  white-space: nowrap;
+}
+
+
+.combosex_tags .combosex_tag_del {
+  display:inline-block;
+  zoom: 1;
+  *display: inline;
+  text-decoration: none;
+  width: 12px;
+  text-align:center;
+  color: #999;
+  cursor: pointer;
+  position:absolute;
+  right:1px;
+  top:2px;
+}
+
+.combosex_tags {
+  float:left; 
+}
+
+.combosex_tags .combosex_tag_del:hover {
+  color:#c00;
+}
+.combosex_tagged {
+  cursor: text; 
+}
+
+.combosex_tagged li.combosex_input_span {
+  background:none;
+  width:30px;
+  border:none;
+  padding-top:1px;
+  padding-bottom:1px;
+  filter:none;
+}
+
+.combosex_with_append .combosex_input_span {
+  padding-right: 18px;
+}
+
+.combosex_tagged .combosex_input_span {
+  min-width: 30px;
+  cursor:text;
+}
+.combosex_tagged .combosex_input_span input {
+  width:100%; 
+}
+
+.combosex_tags .combosex_input_hidden {
+  white-space:nowrap;
+  overflow:hidden;
+  padding: 2px 5px;
+  max-width: auto;
+  display:none;
+}
+
+.combosex_active {
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+  -moz-box-shadow   : 0 0 5px rgba(0,0,0,.3);
+  -o-box-shadow     : 0 0 5px rgba(0,0,0,.3);
+  box-shadow        : 0 0 5px rgba(0,0,0,.3);
+}
+
+.combosex_main {
+
+}
+.combosex_text .combosex_append {
+  display:none !important
+}
+.combosex_select .combosex_tags {
+  padding-right:17px;
+}
+
+.combosex_readonly .combosex_display {
+  color:#999 !important;
+}
+.combosex_disabled .combosex_display {
+  color:#999 !important;
+}
+
+
+.combosex_spinner {
+  display:none;
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  background: url("../images/spinner.gif");
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  margin-top: -8px; 
+}
+
+.combosex_multi_select  .combosex_spinner {
+  top:16px; 
+}
+
+
+.combosex_tags span i {
+  font-style: normal;
+  font-size:10px;
+  color:#777;
+  margin-left:3px; 
+  font-weight:bold;
+  line-height: 10px;
+  
+  display:none;
+}

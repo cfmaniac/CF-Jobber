@@ -1,0 +1,24 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, textarea, input { margin: 0px; padding: 0px; border: 0px none; font: inherit; vertical-align: baseline; text-decoration: none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none outside none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: none; }
+table { border-collapse: collapse; border-spacing: 0px; }
+a { color: inherit; outline: medium none; }
+.boxed body {
+    border: 1px solid #DDDDDD;
+    margin: 0 auto;
+    max-width: 980px;
+}
+html.boxed {background:#fff;}
+.boxed #header.scroll {max-width:980px;}
+
+html.pattern_1 { background:url(../images/pattern_1.png); }
+html.pattern_2 { background:url(../images/pattern_2.png); }
+html.pattern_3 { background:url(../images/pattern_3.png); }
+.single-candidate, .candidates-box {max-width: 575px \9; /* IE 8 and below */ }
+.ie11 .single-candidate, .ie11 .candidates-box {max-width: 575px }
+.ie11 .content-center .content-center.border, .ie11 .recruiter {  max-width: 575px ;}
+.content-center .content-center.border, .recruiter {  max-width: 575px \9;}
+.textfield2 {background-color: #fff !important; }

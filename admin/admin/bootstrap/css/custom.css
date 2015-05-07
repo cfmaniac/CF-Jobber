@@ -1,0 +1,3 @@
+/* Leave the unicorn-app.css alone and just add your own custom CSS here  */
+#sort-list{margin:0;padding:0}
+#sort-list li{list-style:none;border-bottom:1px #ccc solid;border-top:1px #ccc solid}

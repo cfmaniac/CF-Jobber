@@ -1,0 +1,81 @@
+/********************SCROLLBAR*DEFAULTS********************/
+
+.scroll-wrapper {
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+.scroll-wrapper > .scroll-content {
+    border: none !important;
+    box-sizing: content-box !important;
+    height: auto;
+    left: 0;
+    margin: 0;
+    max-height: none !important;
+    max-width: none !important;
+    overflow: scroll !important;
+    padding: 0;
+    position: relative !important;
+    top: 0;
+    width: auto !important;
+}
+
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+.scroll-element .scroll-bar,
+.scroll-element .scroll-arrow {
+    cursor: pointer;
+}
+
+/*********************EXTERNAL*SCROLLS*********************/
+
+.external-scroll_x, .external-scroll_y {
+    border-left: solid 2px #E5E5E5;
+    border-right: solid 2px #E5E5E5;
+    border-top: solid 2px #F2F2F2;
+    border-bottom: solid 2px #F2F2F2;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    border-radius: 0 0 5px 0;
+    background: #F2F2F2;
+}
+
+.external-scroll_x {
+    bottom: -15px;
+    height: 10px;
+    left: 0;
+    max-width: 200px;
+}
+
+.external-scroll_y {
+    right: -2px;
+    top: 0;
+    width: 20px;
+    height: 560px !important;
+}
+
+.external-scroll_x div,
+.external-scroll_y div
+{
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.external-scroll_x .scroll-bar,
+.external-scroll_y .scroll-bar {
+    background: #CACACA;
+    z-index: 12;
+    width: 16px;
+    margin: 0 2px;
+    border-radius: 3px;
+}
+@media only screen and (max-width: 479px) {
+    .external-scroll_y {height: 538px !important;}
+}
